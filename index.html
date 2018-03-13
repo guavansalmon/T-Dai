@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>T-Dai</title>
+    <style>
+        .bg {
+            background-color: rgb(34, 26, 15);
+            color: rgb(211, 175, 134);
+            font-family: 微軟正黑體;
+        }
+
+        .rice {
+            background-color: #E4DCC1;
+            color: black;
+            border-radius: 2em;
+        }
+
+        .work {
+            background-color: white;
+            color: black;
+        }
+
+        .table {
+            height: 200px;
+            max-width: 600px;
+            margin: auto;
+            width: 100%;
+            border-radius: 2em;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        .worktitle {
+            height: 36px;
+        }
+
+        .container {
+            max-width: 768px;
+            margin: auto;
+        }
+
+        .header {
+            height: 100vh;
+            padding-top: 36vh;
+            padding-left: 10vw;
+        }
+
+        .nav {
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(53, 38, 16);
+
+            /* width: 1.3em; */
+        }
+
+        .li {
+            list-style-type: none;
+            height: 25vh;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+            /* writing-mode:tb-rl; */
+        }
+    </style>
+</head>
+
+<body class="bg">
+    <nav class="nav">
+        <ul>
+            <a href="#">
+                <li class="li">Home</li>
+            </a>
+            <a href="#">
+                <li class="li">關於我</li>
+            </a>
+            <a href="#">
+                <li class="li">工作經歷</li>
+            </a>
+            <a href="#">
+                <li class="li">求學經歷</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <h1>蔡宗霖</h1>
+            <p>軟體工程、專案管理、客戶關係</p>
+        </header>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <h2>關於我</h2>
+                        <p>C#、GA、ML、CSS、HTML、office、</p>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>工作經歷</h2>
+            <table class="rice table">
+                <tr class="worktitle">
+                    <th rowspan="2" class="logo">
+                        <img src="img/rice.png" alt="呷米Logo" width="120px" height="120px">
+                    </th>
+                    <td>
+                        <h3>呷米共食廚房</h3>
+                    </td>
+                    <td>外場</td>
+                </tr>
+                <tr>
+                    <td colspan="2">早餐、飲料製作，餐點、商品販售，進貨整理，點餐，結帳。</td>
+                </tr>
+            </table>
+            <br>
+            <table class="work table">
+                <tr class="worktitle">
+                    <th rowspan="2" class="logo">
+                        <img src="img/cier.png" alt="中華經濟研究院Logo">
+                    </th>
+                    <td>
+                        <h3>中華經濟研究院</h3>
+                    </td>
+                    <td>研究助理</td>
+                </tr>
+                <tr>
+                    <td colspan="2">PMI採購經理人指數計畫，物價計畫，IMD/WEF全球競爭力計畫，其他研究計畫</td>
+                </tr>
+            </table>
+            <br>
+            <table class="work table">
+                <tr class="worktitle">
+                    <th rowspan="2" class="logo">
+                        <img src="#" alt="任遠Logo">
+                    </th>
+                    <td>
+                        <h3>任遠會計師事務所</h3>
+                    </td>
+                    <td>審計助理</td>
+                </tr>
+                <tr>
+                    <td colspan="2">記帳服務，稅務服務，審計，出立稅報、財報。</td>
+                </tr>
+            </table>
+            <br>
+            <table class="work table">
+                <tr class="worktitle">
+                    <th rowspan="2" class="logo">
+                        <img src="img/echem.gif" alt="芝普Logo">
+                    </th>
+                    <td>
+                        <h3>芝普企業有限公司</h3>
+                    </td>
+                    <td>財務助理</td>
+                </tr>
+                <tr>
+                    <td colspan="2">切傳票，開立銷貨單、發票，水單、銀行對帳單整理、資金控管表編制，財務報告簡報製作。</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+        <div>
+            <h2>求學經歷</h2>
+            <table class="table">
+                <tr>
+                    <td>
+                        <img src="img/ncku.png" alt="成功大學校徽">
+                    </td>
+                    <td>
+                        <img src="img/hsnu.png" alt="師大附中校徽" class="logo">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
