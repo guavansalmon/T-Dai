@@ -6,110 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>T-Dai</title>
-    <style>
-        .bg {
-            background-color: rgb(34, 26, 15);
-            color: rgb(211, 175, 134);
-            font-family: 微軟正黑體;
-        }
-
-        .rice {
-            background-color: #E4DCC1;
-            color: black;
-            border-radius: 2em;
-        }
-
-        .work {
-            background-color: white;
-            color: black;
-        }
-
-        .table {
-            height: 200px;
-            max-width: 600px;
-            margin: auto;
-            width: 100%;
-            border-radius: 2em;
-        }
-
-        .logo {
-            width: 120px;
-        }
-
-        .worktitle {
-            height: 36px;
-        }
-
-        .container {
-            max-width: 768px;
-            margin: auto;
-        }
-
-        .header {
-            height: 100vh;
-            padding-top: 36vh;
-            padding-left: 10vw;
-        }
-
-        .nav {
-            position: fixed;
-            right: 0;
-            top: 0;
-            height: 100vh;
-            margin: 0;
-            background-color: rgb(53, 38, 16);
-
-            /* width: 1.3em; */
-        }
-
-        .li {
-            list-style-type: none;
-            height: 25vh;
-            -webkit-writing-mode: vertical-lr;
-            -moz-writing-mode: vertical-lr;
-            -ms-writing-mode: vertical-lr;
-            writing-mode: vertical-lr;
-            /* writing-mode:tb-rl; */
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body class="bg">
     <nav class="nav">
-        <ul>
-            <a href="#">
-                <li class="li">Home</li>
-            </a>
-            <a href="#">
-                <li class="li">關於我</li>
-            </a>
-            <a href="#">
-                <li class="li">工作經歷</li>
-            </a>
-            <a href="#">
-                <li class="li">求學經歷</li>
-            </a>
-        </ul>
+        <a href="#top" class="li">
+            Home
+        </a>
+        <a href="#about" class="li">
+            About
+        </a>
+        <a href="#work" class="li">
+            Experience
+        </a>
+        <a href="#school" class="li">
+            Academic
+        </a>
     </nav>
+
+    <header class="header">
+        <p class="title">
+            <span style="font-size:6vw">the&nbsp;&nbsp;</span>&nbsp;Dumb</p>
+        <p>who is working out the place beyond.</p>
+        <br>
+        <h1 id="home">蔡宗霖</h1>
+        <p>軟體工程、產業分析、專案管理</p>
+    </header>
     <div class="container">
-        <header class="header">
-            <h1>蔡宗霖</h1>
-            <p>軟體工程、專案管理、客戶關係</p>
-        </header>
-        <div>
+        <div class="about">
             <table>
                 <tr>
                     <td>
-                        <h2>關於我</h2>
-                        <p>C#、GA、ML、CSS、HTML、office、</p>
+                        <h2 id="about">關於我</h2>
+                        <p>C#、GA、ML、CSS、HTML、office</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quis et, laborum, qui veniam non esse
+                            nesciunt nihil quasi hic velit beatae, voluptate labore animi eaque ab! Numquam, nesciunt minus.</p>
                     </td>
                     <td></td>
                 </tr>
             </table>
         </div>
-        <div>
-            <h2>工作經歷</h2>
-            <table class="rice table">
+        <div class="work">
+            <h2 id="work">工作經歷</h2>
+            <table class="table">
                 <tr class="worktitle">
                     <th rowspan="2" class="logo">
                         <img src="img/rice.png" alt="呷米Logo" width="120px" height="120px">
@@ -124,7 +64,7 @@
                 </tr>
             </table>
             <br>
-            <table class="work table">
+            <table class="table">
                 <tr class="worktitle">
                     <th rowspan="2" class="logo">
                         <img src="img/cier.png" alt="中華經濟研究院Logo">
@@ -139,7 +79,7 @@
                 </tr>
             </table>
             <br>
-            <table class="work table">
+            <table class="table">
                 <tr class="worktitle">
                     <th rowspan="2" class="logo">
                         <img src="#" alt="任遠Logo">
@@ -154,7 +94,7 @@
                 </tr>
             </table>
             <br>
-            <table class="work table">
+            <table class="table">
                 <tr class="worktitle">
                     <th rowspan="2" class="logo">
                         <img src="img/echem.gif" alt="芝普Logo">
@@ -170,21 +110,42 @@
             </table>
             <br>
         </div>
-        <div>
-            <h2>求學經歷</h2>
+        <div class="school">
+            <h2 id="school">求學經歷</h2>
             <table class="table">
                 <tr>
-                    <td>
-                        <img src="img/ncku.png" alt="成功大學校徽">
+                    <td style="text-align:center">
+                        <img src="img/ncku.png" alt="成功大學校徽" class="logo shadow">
                     </td>
-                    <td>
-                        <img src="img/hsnu.png" alt="師大附中校徽" class="logo">
+                    <td style="text-align:center">
+                        <img src="img/hsnu.png" alt="師大附中校徽" class="logo shadow">
                     </td>
                 </tr>
             </table>
         </div>
-
     </div>
+    <div class="contact">
+        <div class="Dai">
+            <p class="title" >To</p>
+            <br>
+            <br>
+            <br>
+            <h3>T Dai</h3>
+            <p>0917-597-140</p>
+            <p>guavansalmon@gmail.com</p>
+
+        </div>
+        <!-- <div class="mountain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis fugit error iste aliquam, vitae doloremque
+            sunt voluptates? Nemo, esse? Quasi velit reprehenderit, tempore error doloribus omnis eligendi tenetur?Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laboriosam a. Vitae alias animi officiis, temporibus
+            sint ullam, deleniti, excepturi quidem voluptatibus molestias itaque explicabo vero reprehenderit quos. Corporis,
+            nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis recusandae libero reiciendis excepturi
+            commodi accusamus magni quia neque ab alias qui nihil praesentium iste quidem odit molestiae, ut exercitationem
+            iusto.
+        </div> -->
+    </div>
+
+
 </body>
 
 </html>
