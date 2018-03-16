@@ -25,7 +25,8 @@ td{
 }
 
 .logo {
-    width: 120px;
+    width: 110px;
+
 }
 
 .worktitle {
@@ -151,6 +152,9 @@ td{
 
 .shadow {
     box-shadow: 4px 4px 3px black;
+}
+.shadowg {
+    box-shadow: 4px 4px 3px gray;
 }
 
 .mountain {
